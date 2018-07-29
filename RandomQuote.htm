@@ -1,0 +1,54 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+      var arr1=['Carry out a random act of kindness, with no expectation of reward, safe in the knowledge that one day someone might do the same for you.',
+                'Goals transform a random walk into a chase.',
+                'Together we can change the world, just one random act of kindness at a time.',
+                'Everything happening around me is very random. I am enjoying the phase, as the journey is far more enjoyable than the destination.',
+                'Creativity is the process of having original ideas that have value. It is a process; its not random.',
+                'Natural selection is anything but random.',
+                'I cry at random things, like a flower, or someone giving me a present, or my sister giving me a nice hug.',
+                'Maybe life is random, but I doubt it.',
+               'If you so choose, each day can be filled with even more joy than the one before. If you so choose, even the most seemingly random events can work in your favor.',
+               'Sometimes in life, random things can blind-side you.',
+               'Self-control means wanting to be effective at some random point in the infinite radiations of my spiritual existence.',
+               'My style is unique and random. But I think its important that it still makes sense.',
+               'It is necessary to fall in love... if only to provide an alibi for all the random despair you are going to feel anyway.',
+               'Random chance plays a huge part in everybodys life.',
+                'Random things are luxurious to people. Its personal.',
+               'Our time on Earth is so random.',
+               'I miss people. I miss going anywhere and meeting a random person and saying Hi and having a conversation about life. I love people.'];
+      var arr2=['Princess Diana','Mihaly Ciskszintmihayli','Ron Hall','Sushant Singh Ranput','Ken Robinson','Richard Dawkins','Naomie Harris','Steven Tyler','Ralph Marston','Michael Ryan','Franz Kafta','Jess Glynne','Albert Gamus','gary gygas','Lwren scott','Lisa Ling','Lady Gaga'];
+      var arr3=['#66a3ff','#3385ff','#66ff66','#99ff99','#94b8b8','#b3cccc','#00b3b3','#ff9999','#ffb3b3','#ffdb4d','#b38f00','#d9b3ff','#cc9966','#dfbe9f','#ff794d','#990000','#3399ff'];
+      var ri = Math.floor(Math.random()*17);
+      $("p").remove();
+      $("h1").css("color",arr3[ri]);
+      $("body").css("background-color",arr3[ri]);
+      $("button").css("background-color",arr3[ri]);
+      var txt1 = $("<p id='we'></p>").text(arr1[ri]);
+      var txt2 = $("<p id='qw'></p>").text(arr2[ri]);
+        $("#div2").append(txt1);
+        $("#div2").append(txt2);
+      $("#we").css({"color":arr3[ri],"font-size":"200%"});
+      $("#qw").css({"color":arr3[ri],"font-size":"150%","float":"right"});
+    });
+});
+</script>
+</head>
+<body>
+
+<div id="div1" >
+  <h1>Random Quotes</h1>
+  <p id="we">Carry out a random act of kindness, with no expectation of reward, safe in the knowledge that one day someone might do the same for you.</p>
+  <p id="qw">Princess Diana</p>
+  <div id="div2"></div><br><br><br><br>
+<button>New Quote</button>
+</div>
+<br>
+
+</body>
+</html>
+
