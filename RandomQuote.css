@@ -1,0 +1,30 @@
+body{
+  background-color:#668cff;
+  padding:100px;
+  padding-left:300px;
+  padding-right:300px;
+}
+#div1{
+  padding:30px;
+  background-color:white;
+  color:#668cff;
+}
+h1{
+  font-size:50px;
+  padding-left:100px;
+}
+button{
+  font-size:20px;
+  padding:20px;
+  color:white;
+  background-color:#668cff;
+}
+#we{
+  color:#668cff;
+  font-size:200%;
+}
+#qw{
+  color:#668cff;
+  font-size:150%;
+  float:right;
+}
